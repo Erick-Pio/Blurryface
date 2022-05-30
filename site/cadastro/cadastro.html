@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-login.css">
-    <title>Erick's House - Login</title>
+    <link rel="stylesheet" href="style-cadastro.css">
+    <title>Erick's House - Cadastro</title>
 </head>
 
 <body>
@@ -17,17 +17,16 @@
                 <p>Erick's House</p>
                 <ul>
                     <li>Voltar</li>
-                    <li>Cadastro</li>
+                    <li>Login</li>
                 </ul>
             </nav>
         </header>
-
+        
         <div class="container">
             <div class="left-login">
-                <h1>Faça login e seja bem-vindo(a) <br>
-                    a minha casa</h1>
+                <h1>Faça seu cadastro</h1>
 
-                <img src="image-1.png" class="login-image">
+                <img src="am.jpeg" class="login-image">
             </div>
 
 
@@ -39,23 +38,32 @@
 
             <div class="right-login">
                 <div class="card-login">
-                    <h1>Entrar</h1>
+                    <h1>Cadastrar</h1>
                     <div class="tipo_campo">
                         <label for="usuario">Usuário</label>
                         <input placeholder="usuario" id="email_input">
                     </div>
                     <div class="tipo_campo">
+                        <label for="senha">email</label>
+                        <input type="password" placeholder="senha" id="senha_input">
+                    </div>
+                    <div class="tipo_campo">
                         <label for="senha">Senha</label>
                         <input type="password" placeholder="senha" id="senha_input">
                     </div>
-                    <button class="btn">Entrar</button>
+                    <div class="tipo_campo">
+                        <label for="senha">Confirmação de senha</label>
+                        <input type="password" placeholder="senha" id="senha_input">
+                    </div>
+                    <button class="btn">Cadastrar</button>
                 </div>
-                <div id="div_aguardar" class="loading-div">
+                
+                <!--<div id="div_aguardar" class="loading-div">
                     <img src="./assets/circle-loading.gif" id="loading-gif">
                 </div>
 
                 <div id="div_erros_login">
-                </div>
+                </div>-->
             </div>
         </div>
 </body>

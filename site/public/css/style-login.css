@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Tiro+Kannada&display=swap');
+
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffda9b;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin: 0px 15px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+li:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+p {
+    font-size: 25px;
+}
+
+nav {
+    font-family: 'Tiro Kannada', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 20px;
+    color: #329484;
+    text-shadow: 0px 1px 1px #00000056;
+}
+
+.left-login {
+    font-family: 'new tegomi', sans-serif;
+    width: 50vw;
+    height: 70vh;
+    justify-content: center;
+    /*justify-content manipula o objeto em eixo X*/
+    align-items: center;
+    /*align-items manipula o objeto em eixo Y*/
+    display: flex;
+    flex-direction: column;
+}
+
+.left-login>h1 {
+    color: #329484;
+    text-shadow: 0px 1px 2px #00000056;
+}
+
+.login-image {
+    font-size: 3vw;
+    width: 25vw;
+}
+
+.right-login {
+    font-family: 'Tiro Kannada', sans-serif;
+    width: 50vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.card-login {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #4a9689;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login>h1 {
+    color: #ffda9b;
+    font-weight: 800;
+    margin: 0;
+}
+
+.tipo_campo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*justify-content manipula o objeto em eixo X, porém quando usamos o flex-direction isso se inverte, ou seja, agora manipula em eixo Y*/
+    justify-content: center;
+    margin: 10px 0;
+    /*align-items manipula o objeto em eixo Y, porém quando usamos o flex-direction isso se inverte, ou seja, agora manipula em eixo X*/
+}
+
+.tipo_campo > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #211817;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.tipo_campo > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.tipo_campo > input::placeholder {
+    color: #4a9689;
+}
+
+.btn {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #4a9689;
+    background-color: #ffda9b;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.loading-div {
+    width: 50px;
+    margin: auto;
+    display: none;
+  }
+
+  .loading-div img {
+    height: 50px;
+    width: 50px;
+  }
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .main-login {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left-login>h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .login-image {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 90%;
+
+    }
+}
