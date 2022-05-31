@@ -10,7 +10,7 @@
 
     <script src="./js/funcoes.js"></script>
 
-    <link rel="icon" href="./assets/icon/favicon.ico">
+    <link rel="icon" href="assets/icon/voyage.jpeg">
     <link rel="stylesheet" href="./css/style-login.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -18,7 +18,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="fadeIn">
 
     <!--Header-->
 
@@ -26,20 +26,24 @@
     <div class="main-login">
         <header>
             <nav>
-                <p>Erick's House</p>
+                <p>Dark side of the moon &#127761;</p>
                 <ul>
-                    <li>Voltar</li>
-                    <li>Cadastro</li>
+                    <li>
+                        <a href="index.html"> Voltar</a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html"> Cadastro </a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <div class="container">
             <div class="left-login">
-                <h1>Faça login e seja bem-vindo(a) <br>
-                    a minha casa</h1>
+                <h1>Faça login and welcome <br>
+                    to the moon</h1>
 
-                <img src="assets/imgs/image-1.png" class="login-image">
+                <img src="assets/imgs/dark.png" class="login-image">
             </div>
 
             <!--<div class="header">
@@ -138,7 +142,7 @@
 
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
-           // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
             finalizarAguardar();
             return false;
         }
@@ -189,8 +193,8 @@
             }
 
         })//.catch(function (erro) {
-           // console.log(erro);
-       // })
+        // console.log(erro);
+        // })
 
         return false;
     }
