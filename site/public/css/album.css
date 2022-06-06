@@ -14,9 +14,9 @@ body * {
     color: #e3b062;
     width: fit-content;
     font-weight: 500;
-  }
+}
 
-.titulo > span {
+.titulo>span {
     color: #FFFFFF;
     font-weight: 800;
     text-shadow: 0px 0px 5px #FFFFFF
@@ -47,8 +47,8 @@ li:before {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #e3b062;
-    box-shadow: 0px 5px 10px #e3b062;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 10px #FFFFFF;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -62,122 +62,112 @@ li:hover:before {
     transform: scaleX(1);
 }
 
-.container {
+nav {
+    font-family: 'Tiro Kannada', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 1px 1px #00000056;
+}
+
+.login-cadastro {
+    display: flex;
+    margin-left: 50px;
+}
+
+.simulador {
+    color: white;
+
+}
+
+.simulador .container {
+    flex-direction: column
+}
+
+
+.container1 {
     width: 80%;
     margin: auto;
     display: flex;
-  }
+}
 
-  
-.agora {
-    font-weight: 800;
-  }
-  
-  .navbar {
-    margin-left: 380px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    color: #e3b062;
-  }
-  
-  
-  /* BANNER */
-  
-  .banner {
+.banner {
     height: fit-content;
     padding: 40px 0;
     color: white;
     background-image: url(".././assets/Gifs/tranquility.gif");
-    /*background-size: cover;*/ 
-  }
-  
-  .banner .container {
+    /*background-size: cover;*/
+}
+
+.banner .container1 {
     height: 400px;
     font-size: 36px;
     justify-content: center;
     align-items: center;
-  }
-  
-  .tamanho-conteudo { 
+}
+
+.banner-album {
+    height: fit-content;
+    padding: 40px 0;
+    color: white;
+}
+
+.banner-album .album1 {
+    background-color: #e3b062;
+    margin-top: 20px;
+    height: 450px;
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa1{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+.spot-tranquility {
+    display: flex;
+    width: 350px;
+    height: 200px;
+    margin-left: 500px;
+}
+
+.img-spot {
+    display: inline-flex;
+}
+
+.tamanho-conteudo {
     height: fit-content !important;
-  }
-  
-  .banner p {
+}
+
+.banner p {
     width: 50%;
     margin: 0;
     padding: 0;
     width: 280px;
     font-size: 36px;
-  }
-  
-  .banner .container span {
+}
+
+.banner .container1 span {
     font-weight: 800;
     color: #e3b062;
-  }
-  
-  /* missao visao valores */
-  
-  .social {
-    background-color: #e3b062;
-  }
-  
-  .social .container{
-    justify-content: center;
-    display: flex;
-  }
-  
-  .box img {
-    width: 170px;
-    margin-bottom: 50px;
-  }
-  
-  .social .container .boxes {
-    display: flex;
-  }
-  
-  .social p {
-    text-align: center;
-  }
-  
-  .box {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  
-  .box {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  
-  /* FOOTER */
-  
-  .footer {
+}
+
+/* FOOTER */
+
+.footer {
     background-color: #161618;
     height: 100px;
     color: #fff;
     display: flex;
     font-size: 15px;
-  }
-  
-  .footer .container {
+}
+
+.footer .container {
     justify-content: center;
-  }
-  
-  /* pagina extra - simulador */
-  .simulador {
-    color: white;
-  
-  }
-  
-  .simulador .container {
-    flex-direction: column
-  }
+}
