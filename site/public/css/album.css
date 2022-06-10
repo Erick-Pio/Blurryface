@@ -86,6 +86,7 @@ nav {
     flex-direction: column
 }
 
+/*Banner 1*/
 
 .container1 {
     width: 80%;
@@ -93,59 +94,48 @@ nav {
     display: flex;
 }
 
-.banner {
+.banner-album1 .album1 {
+    background-color: #e3b062;
+    height: 50vh;
+    align-items: center;
+}
+
+.banner-album1 {
+    height: fit-content;
+    color: white;
+    border: 5px solid black;
+}
+
+.banner-album1 h2 {
+    color: #161618;
+    margin-left: 28%;
+    font-size: 50px;
+}
+
+.banner-album1 p {
+    color: #161618;
+    font-size: 30px;
+    margin-left: 1%;
+
+}
+
+.banner1 {
     height: fit-content;
     padding: 40px 0;
+    margin-top: 10%;
     color: white;
     background-image: url(".././assets/Gifs/tranquility.gif");
+    border: 5px solid black;
     /*background-size: cover;*/
 }
 
-.banner .container1 {
+.banner1 .container1 {
     height: 400px;
-    font-size: 36px;
     justify-content: center;
     align-items: center;
 }
 
-.banner-album {
-    height: fit-content;
-    padding: 40px 0;
-    color: white;
-}
-
-.banner-album .album1 {
-    background-color: #e3b062;
-    margin-top: 20px;
-    height: 450px;
-    font-size: 36px;
-    justify-content: center;
-    align-items: center;
-}
-
-.capa1{
-    display: flex;
-    width: 300px;
-    height: 300px;
-    margin-left: 50px;
-}
-
-.spot-tranquility {
-    display: flex;
-    width: 350px;
-    height: 200px;
-    margin-left: 500px;
-}
-
-.img-spot {
-    display: inline-flex;
-}
-
-.tamanho-conteudo {
-    height: fit-content !important;
-}
-
-.banner p {
+.banner1 p {
     width: 50%;
     margin: 0;
     padding: 0;
@@ -153,9 +143,428 @@ nav {
     font-size: 36px;
 }
 
-.banner .container1 span {
+.banner1 .container1 span {
     font-weight: 800;
     color: #e3b062;
+}
+
+/*Fim banner 1*/
+
+/*Banner 2*/
+
+.container2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.banner-album2 {
+    height: fit-content;
+    color: white;
+    border: 5px solid black;
+}
+
+.banner-album2 h2 {
+    color: #161618;
+    margin-left: 40%;
+    font-size: 50px;
+}
+
+.banner-album2 p {
+    color: #161618;
+    font-size: 30px;
+    margin-left: 1%;
+
+}
+
+.banner-album2 .album2 {
+    background-color: #fffdd0;
+    height: 50vh;
+    align-items: center;
+}
+
+.banner2 {
+    margin-top: 5%;
+    height: fit-content;
+    padding: 40px 0;
+    color: white;
+    background-image: url(".././assets/imgs/Suckjpg.jpg");
+    border: 5px solid black;
+    /*background-size: cover;*/
+}
+
+.banner2 .container2 {
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner2 p {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    width: 280px;
+    font-size: 36px;
+    color: #161618;
+}
+
+/*Fim do Banner 2*/
+
+/*Banner 3*/
+
+.container3 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.banner-album3 {
+    height: fit-content;
+    color: white;
+    border: 5px solid black;
+}
+
+.banner-album3 h2 {
+    color: #FFFFFF;
+    margin-left: 50%;
+    font-size: 50px;
+}
+
+.banner-album3 p {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-left: 1%;
+
+}
+
+.banner-album3 .album3 {
+    background-color: #080808;
+    height: 50vh;
+    align-items: center;
+}
+
+.banner3 {
+    margin-top: 10%;
+    height: fit-content;
+    padding: 40px 0;
+    color: white;
+    background-image: url(".././assets/Gifs/AM.gif");
+    border: 5px solid black;
+    /*background-size: cover;*/
+}
+
+.banner3 .container3 {
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner3 p {
+    width: 50%;
+    margin-left: 17%;
+    padding: 0;
+    width: 280px;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+/*Fim do banner 3*/
+
+/*Banner 4*/
+
+.container4 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.banner-album4 {
+    height: fit-content;
+    color: white;
+    border: 5px solid black;
+}
+
+.banner-album4 h2 {
+    color: rgb(126, 125, 125);
+    margin-left: 40%;
+    font-size: 50px;
+}
+
+.banner-album4 p {
+    color: rgb(126, 125, 125);
+    font-size: 30px;
+    margin-left: 1%;
+
+}
+
+.banner-album4 .album4 {
+    background-color: #1B2E32;
+    height: 50vh;
+    align-items: center;
+}
+
+.banner4 {
+    margin-top: 10%;
+    height: fit-content;
+    padding: 40px 0;
+    color: white;
+    background-image: url(".././assets/imgs/Whatever.jpg");
+    border: 5px solid black;
+    /*background-size: cover;*/
+}
+
+.banner4 .container4 {
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner4 p {
+    width: 50%;
+    margin-left: 4%;
+    padding: 0;
+    width: 280px;
+    font-size: 50px;
+    color: rgb(126, 125, 125);
+}
+
+ /* Fim do banner 4*/
+
+ /* Banner 5*/
+ .container5 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.banner-album5 {
+    height: fit-content;
+    color: white;
+    border: 5px solid black;
+}
+
+.banner-album5 h2 {
+    color: rgb(192, 52, 76);
+    margin-left: 35%;
+    font-size: 50px;
+}
+
+.banner-album5 p {
+    color: rgb(192, 52, 76);
+    font-size: 30px;
+    margin-left: 1%;
+
+}
+
+.banner-album5 .album5 {
+    background-color: #080808;
+    height: 50vh;
+    align-items: center;
+}
+
+.banner5 {
+    margin-top: 10%;
+    height: fit-content;
+    padding: 40px 0;
+    color: white;
+    background-image: url(".././assets/imgs/favourite.jpg");
+    border: 5px solid black;
+    /*background-size: cover;*/
+}
+
+.banner5 .container5 {
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner5 p {
+    width: 50%;
+    padding: 0;
+    width: 280px;
+    font-size: 80px;
+    font-weight: 1000;
+    color: rgb(192, 52, 76);
+}
+
+/*Fim do banner 5*/
+
+ /* Banner 6*/
+ .container6 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.banner-album6 {
+    height: fit-content;
+    color: white;
+    border: 5px solid black;
+
+}
+
+.banner-album6 h2 {
+    color: #520644;
+    margin-left: 45%;
+    font-size: 50px;
+}
+
+.banner-album6 p {
+    color: #520644;
+    font-size: 30px;
+    margin-left: 1%;
+
+}
+
+.banner-album6 .album6 {
+    background-color: #080808;
+    height: 50vh;
+    align-items: center;
+}
+
+.banner6 {
+    margin-top: 10%;
+    height: fit-content;
+    padding: 40px 0;
+    color: white;
+    background-image: url(".././assets/imgs/humbug.jpg");
+    border: 5px solid black;
+    /*background-size: cover;*/
+}
+
+.banner6 .container6 {
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner6 p {
+    width: 50%;
+    padding: 0;
+    width: 280px;
+    font-size: 100px;
+    font-weight: 1000;
+    margin-right: 3%;
+    color: yellow;
+}
+
+/*Fim do banner 6*/
+
+/* Capa 1 */
+.capa1{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    border: 5px solid black;
+}
+
+.spot-tranquility {
+    display: flex;
+    width: 350px;
+    height: 200px;
+}
+
+.img-spot1 {
+    display: inline-flex;
+}
+
+/* Capa 2*/
+.capa2{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    border: 5px solid black;
+}
+
+.spot-suck {
+    display: flex;
+    width: 350px;
+    height: 200px;
+}
+
+.img-spot2 {
+    display: inline-flex;
+}
+
+/*Capa 3*/
+.capa3{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    border: 5px solid black;
+}
+
+.spot-suck {
+    display: flex;
+    width: 350px;
+    height: 200px;
+}
+
+.img-spot3 {
+    display: inline-flex;
+}
+
+/* Capa 4*/
+
+.capa4{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    border: 5px solid black;
+}
+
+.spot-suck {
+    display: flex;
+    width: 350px;
+    height: 200px;
+}
+
+.img-spot4 {
+    display: inline-flex;
+}
+
+/* Capa 5 */
+
+.capa5{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    border: 5px solid black;
+}
+
+.spot-suck {
+    display: flex;
+    width: 350px;
+    height: 200px;
+}
+
+.img-spot5 {
+    display: inline-flex;
+}
+
+/* Capa 6 */
+
+.capa6{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    border: 5px solid black;
+}
+
+.spot-suck {
+    display: flex;
+    width: 350px;
+    height: 200px;
+}
+
+.img-spot6 {
+    display: inline-flex;
 }
 
 /* FOOTER */
@@ -166,8 +575,14 @@ nav {
     color: #fff;
     display: flex;
     font-size: 15px;
+    justify-content: center;
+}
+
+.footer h3 {
+    margin-left: 30%;
 }
 
 .footer .container {
     justify-content: center;
 }
+
