@@ -160,24 +160,26 @@ li:hover:before {
   
   /* FOOTER */
   
-  .footer {
-    background-color: #161618;
-    height: 100px;
-    color: #fff;
-    display: flex;
-    font-size: 15px;
+  .inones{
+    margin-top: 30px;
   }
-  
-  .footer .container {
-    justify-content: center;
-  }
-  
-  /* pagina extra - simulador */
-  .simulador {
-    color: white;
+  .inones a{
+     margin: 0px 10px;   
+     color: #fff;
+     height: 50px;
+     width: 50px;
+     font-size: 30px;
   
   }
   
-  .simulador .container {
-    flex-direction: column
+  #footer p{
+     margin-top: 20px;
+     font-weight: 700;
+  }
+  #footer{
+     background-color: #FFFFFF;
+         color: #161618;
+         text-align: center;
+         padding-top: 20px;
+         padding-bottom: 20px;    
   }

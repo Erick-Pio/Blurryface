@@ -43,7 +43,7 @@
                 <h1>Faça login and welcome <br>
                     to the moon</h1>
 
-                <img src="assets/imgs/dark.png" class="login-image">
+                <img src="assets/imgs/" class="login-image">
             </div>
 
             <!--<div class="header">
@@ -147,6 +147,19 @@
             finalizarAguardar();
             return false;
         }
+
+        if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
+            window.alert("E-mail inválido! Verifique e tente novamente.");
+            finalizarAguardar();
+            return false;
+        } 
+
+        if (senhaVar.length <= 3 || senhaVar.length >= 40) {
+            window.alert(`A Senha deve ter no mínimo 4 caracteres.`);
+            finalizarAguardar();
+            return false;
+        }
+
         else {
             setInterval(sumirMensagem, 5000)
         }

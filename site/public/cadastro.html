@@ -91,6 +91,10 @@
                         <input placeholder="email" id="email_input">
                     </div>
                     <div class="tipo_campo">
+                        <label for="tel">Telefone</label>
+                        <input placeholder="11123456789" id="tel_input">
+                    </div>
+                    <div class="tipo_campo">
                         <label for="senha">Senha</label>
                         <input type="password" placeholder="senha" id="senha_input">
                     </div>
@@ -176,16 +180,34 @@
         // Agora vá para o método fetch logo abaixo
         var nomeVar = nome_input.value;
         var emailVar = email_input.value;
+        var telVar = tel_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || emailVar == "" || telVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
             alert ('Mensagem de erro para todos os campos em branco');
 
             finalizarAguardar();
             return false;
         }
+
+        if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
+            window.alert("E-mail inválido! Verifique e tente novamente.");
+            finalizarAguardar();
+            return false;
+        } 
+        if (telVar.length <= 10 || telVar.length >= 12){
+            window.alert(`O Telefone não pode conter letras ou caracteres especias e precisa conter 11 numeros(DDD + 9 digitos).`);
+           finalizarAguardar();
+            return false;
+        }
+        if (senhaVar.length <= 3 || senhaVar.length >= 40) {
+            window.alert(`A Senha deve ter no mínimo 4 caracteres.`);
+            finalizarAguardar();
+            return false;
+        }
+
         else {
             setInterval(sumirMensagem, 5000)
         }
@@ -201,6 +223,7 @@
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
                 emailServer: emailVar,
+                telServer: telVar,
                 senhaServer: senhaVar
             })
         }).then(function (resposta) {
